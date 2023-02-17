@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import './App.css';
 import Grid from './listings/Grid';
@@ -6,7 +8,7 @@ import courses from '../data/courses.json';
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {courses};
+    this.state = { courses };
   }
 
   render() {
@@ -20,7 +22,7 @@ export default class App extends Component {
           </nav>
         </div>
         <div>
-            <Grid items={this.state.courses}/>
+          <Grid items={this.state.courses} />
         </div>
       </div>
     );
